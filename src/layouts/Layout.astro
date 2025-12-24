@@ -1,0 +1,26 @@
+---
+import '../styles/global.css'
+
+import '@fontsource-variable/jost';
+---
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favi.svg" />
+		<title>Feliz Navidad</title>
+	</head>
+	<body>
+		<div class="max-w-6xl px-10 pt-20 mx-auto">
+			<slot />
+		</div>
+	</body>
+</html>
+
+<style is:global>
+	html {
+		font-family: 'Jost Variable', sans-serif;
+		background:  #6e8391;
+	}
+</style>

@@ -1,0 +1,88 @@
+---
+import BentoItem from '@/components/BentoItem.astro';
+---
+
+<section 
+class={`
+    w-full max-w-6xl
+    grid grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-4 sm:p-20
+    `}>
+
+    <BentoItem 
+    class="col-span-10 md:col-span-4"
+    title="Ranita">
+    <div 
+        slot="img" 
+        class="
+            absolute left-0 top-0 w-full
+            h-full group-hover:scale-110 transition-transform duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover 
+            bg-no-repeat -z-10
+        "
+        style="background-image: url('/img1.webp')"
+    />
+    <p slot="content" class="max-w-full text-primary text-sm sm:text-base leading-relaxed">
+        Cada vez que te veo, confirmo lo hermosa que eres por dentro y por fuera.
+    </p>
+
+    </BentoItem>  
+
+    <BentoItem 
+    class="col-span-10 md:col-span-6"
+    title="Gracías por todo">
+    <div 
+        slot="img" 
+        class="
+            absolute left-0 top-0 w-full
+            h-full group-hover:scale-110 transition-transform duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover 
+            bg-no-repeat -z-10
+        "
+        style="background-image: url('/h.webp')"
+    />
+    <p slot="content" class="max-w-full text-primary text-sm sm:text-base leading-relaxed">
+        Te agradezco mucho lo que haces por mí. Eres muy especial y valiosa en mi vida.
+    </p>
+
+    </BentoItem> 
+
+    <BentoItem 
+    class="col-span-10 md:col-span-6"
+    title="Te amo">
+    <div 
+        slot="img" 
+        class="
+            absolute left-0 top-0 w-full
+            h-full group-hover:scale-110 transition-transform duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover 
+            bg-no-repeat -z-10
+        "
+        style="background-image: url('/v.webp')"
+    />
+    <p slot="content" class="max-w-full text-primary text-sm sm:text-base leading-relaxed">
+        Me enamoré de ti por tu forma de ser y sigo haciéndolo cada día. Adoro cómo me tratas, cómo me cuidas y lo valiosa que eres para mí.
+    </p>
+
+    </BentoItem> 
+
+    <BentoItem 
+    class="col-span-10 md:col-span-4"
+    title="Siempre tú">
+    <div 
+        slot="img" 
+        class="
+            absolute left-0 top-0 w-full
+            h-full group-hover:scale-110 transition-transform duration-1000
+            ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover 
+            bg-no-repeat -z-10
+        "
+        style="background-image: url('/m.webp')"
+    />
+    <p slot="content" class="max-w-full text-primary text-sm sm:text-base leading-relaxed">
+        Gracias por todo, eres lo mejor que le ha pasado a mi vida y nunca te cambiaría por nada.
+    </p>
+
+    </BentoItem> 
+
+</section>

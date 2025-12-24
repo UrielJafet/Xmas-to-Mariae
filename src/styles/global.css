@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@plugin "@midudev/tailwind-animations";
+
+@theme{
+    --color-primary: #d0d5e7;
+    --color-secondary: #20272b;
+    --color-third: #47555e;
+
+}

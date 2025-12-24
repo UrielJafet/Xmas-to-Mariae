@@ -1,0 +1,31 @@
+---
+const fechaInicialStr = '2022-04-28'; 
+---
+
+<section class="my-10 flex flex-col gap-y-10 justify-center items-center">
+    
+    <div class="flex flex-row gap-x-2 text-secondary uppercase font-bold text-2xl">
+        <div class="flex flex-col justify-center items-center gap-y-5 h-44 w-90 md:w-150 rounded-lg bg-primary text-secondary hover:animate-tada">
+            <span class="text-4xl">llevamos juntos</span>
+            <p id="days" class="text-2xl text-center"></p>
+        </div>
+    </div>
+
+</section>
+
+<script define:vars={{ fechaInicialStr }}>
+    const fechaInicial = new Date(fechaInicialStr);
+    
+    function calcularDias() {
+        const fechaActual = new Date();
+        const diferenciaMs = fechaActual - fechaInicial;
+        const diasTranscurridos = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
+        document.getElementById('days').textContent = `${diasTranscurridos + 1} días.`;
+    }
+
+    // Calcula inicialmente
+    calcularDias();
+
+    // Actualiza cada segundo 
+    setInterval(calcularDias, 1000);
+</script>
